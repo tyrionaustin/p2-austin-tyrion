@@ -8,6 +8,56 @@ html {
   background-color: #1B75BC;
 }
 
+body {
+  background-color: white;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 header {
-background-color: #D1D3D4;
+  background-color: #D1D3D4;
+}
+
+li a {
+  width: 240px;
+
+}
+
+header nav a {
+text-decoration: none;
+color: white;
+margin: 0 20px;
+text-align: center;
+padding: 2% 0;
+}
+
+
+header nav ul li {
+display: inline;
+margin: 0 auto;
+padding: 2% 0;
+text-align: center;
+text-decoration: none;
+font-size: 2em;
+justify-content: center;
+}
+
+header img {
+  width: 240px;
+}
+
+.hero img {
+  width: 1200px;
+  height:600px;
+}
+
+.mission {
+  width:400px;
+}
+.mission h2 {
+  background-color: #D1D3D4;
+}
+
+footer {
+  background-color: #D1D3D4;
 }
