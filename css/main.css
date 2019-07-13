@@ -47,17 +47,44 @@ header img {
 }
 
 .hero img {
-  width: 1200px;
+  width: 1000px;
   height:600px;
+  margin: auto;
 }
 
-.mission {
-  width:400px;
+.about {
+  width: 1200px;
+  margin: 0 auto;
 }
+
+.mission, .visions, .goals {
+  width: 340px;
+  float: left;
+  padding: 0 20px;
+}
+
 .mission h2 {
   background-color: #D1D3D4;
+  color: #1B75BC;
+  width: 400px;
+  text-align: center;
+}
+
+.visions h2 {
+  background-color: #D1D3D4;
+  color: #1B75BC;
+  width: 400px;
+  text-align: center;
+}
+
+.goals h2 {
+  background-color: #D1D3D4;
+  color: #1B75BC;
+  width: 400px;
+  text-align: center;
 }
 
 footer {
   background-color: #D1D3D4;
+  clear: both;
 }
