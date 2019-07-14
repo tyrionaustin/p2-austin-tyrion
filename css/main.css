@@ -62,6 +62,8 @@ header img {
 }
 
 .about {
+  display: flex;
+  flex-direction: row;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -69,7 +71,7 @@ header img {
 
 .mission, .visions, .goals {
   width: 340px;
-  float: left;
+  flex: 1;
   padding: 0 20px;
 }
 
@@ -139,7 +141,21 @@ textarea {
 
 footer {
   background-color: #D1D3D4;
-  clear: both;
+  display: flex;
+  flex-direction: row;
+}
+
+.foot_nav, .location, .connect {
+  max-width: 340px;
+  width: 100%;
+  flex: 1;
+  padding: 0 20px;
+}
+
+footer ul li a img {
+  display: inline;
+  text-align: center;
+  margin: 0 auto;
 }
 
 footer ul li {
