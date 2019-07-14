@@ -84,6 +84,33 @@ header img {
   text-align: center;
 }
 
+
+form {
+  border: 2px solid;
+  border-color: #1B75BC;
+  max-width: 500px;
+  width: 100%;
+}
+
+form p {
+  padding: 10px 0;
+}
+
+.form {
+  float: left;
+  margin: 0 auto;
+}
+
+.map {
+  float: right;
+  margin: 0 auto;
+}
+
+textarea {
+  width: 500px;
+  height: 150px;
+}
+
 footer {
   background-color: #D1D3D4;
   clear: both;
