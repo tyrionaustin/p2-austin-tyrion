@@ -10,16 +10,24 @@ html {
 
 body {
   background-color: white;
+  font-family: 'Arimo', sans-serif;
   width: 1200px;
   margin: 0 auto;
 }
 
 header {
   background-color: #D1D3D4;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Work Sans', sans-serif;
+
 }
 
 li a {
   width: 240px;
+  margin: 0 auto;
 
 }
 
@@ -47,13 +55,15 @@ header img {
 }
 
 .hero img {
-  width: 1000px;
+  width: 100%;
   height:600px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .about {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -66,30 +76,36 @@ header img {
 .mission h2 {
   background-color: #D1D3D4;
   color: #1B75BC;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   text-align: center;
 }
 
 .visions h2 {
   background-color: #D1D3D4;
   color: #1B75BC;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   text-align: center;
 }
 
 .goals h2 {
   background-color: #D1D3D4;
   color: #1B75BC;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact h1 {
   text-align: center;
 }
 
 
 form {
-  border: 2px solid;
-  border-color: #1B75BC;
   max-width: 500px;
   width: 100%;
+  padding-left: 20px;
 }
 
 form p {
@@ -104,14 +120,28 @@ form p {
 .map {
   float: right;
   margin: 0 auto;
+  text-align: center;
+}
+
+
+input {
+  border: 2px solid;
+  border-color: #1B75BC;
 }
 
 textarea {
-  width: 500px;
+  border: 2px solid;
+  border-color: #1B75BC;
+  max-width: 500px;
+  width:100%;
   height: 150px;
 }
 
 footer {
   background-color: #D1D3D4;
   clear: both;
+}
+
+footer ul li {
+  list-style: none;
 }
