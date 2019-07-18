@@ -1,3 +1,5 @@
+/* hamburger menu */
+
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -7,6 +9,7 @@ function myFunction() {
   }
 }
 
+/* accordion javascript */
 
 var accItem = document.getElementsByClassName('accordionItem');
     var accHD = document.getElementsByClassName('accordionItemHeading');
@@ -23,6 +26,7 @@ var accItem = document.getElementsByClassName('accordionItem');
         }
     }
 
+/* slideshow javascript */
 
     var slideIndex = 1;
     showSlides(slideIndex);
