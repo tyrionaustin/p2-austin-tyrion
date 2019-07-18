@@ -41,105 +41,167 @@ h1, h2 {
 
 }
 
-.nav {
-  -webkit-transition: left 0.5s ease;
-  -moz-transition: left 0.5s ease;
-  -ms-transition: left 0.5s ease;
-  -o-transition: left 0.5s ease;
-  transition: left 0.5s ease;
-  background: #662D91;
-  color: white;
-  cursor: pointer;
-  font-size: 2rem;
-  height: 100vh;
-  left: -20rem;
-  padding: 6rem 2rem 2rem 2rem;
-  position: fixed;
-  top: 0;
-  width: 15rem;
-  z-index: 1;
+nav {
+background-color: #D1D3D4;
+padding: 2% 0;
 }
 
-.nav.expanded { left: 0; }
-
-.nav ul {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  list-style: none;
-  margin: 0;
-  padding: 0;
+header nav a {
+text-decoration: none;
+color: white;
+margin: 0 20px;
+text-align: center;
+padding: 2% 0;
 }
 
-.nav-toggle {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  height: 2rem;
-  left: 2rem;
-  position: fixed;
-  top: 2rem;
-  width: 3.6rem;
-  z-index: 2;
+
+header nav ul li {
+display: inline;
+margin: 0 auto;
+padding: 2% 0;
+text-align: center;
+text-decoration: none;
+font-size: 2em;
 }
 
-.nav-toggle:hover { opacity: 0.8; }
-
-.nav-toggle .nav-toggle-bar,  .nav-toggle .nav-toggle-bar::after,  .nav-toggle .nav-toggle-bar::before {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background: white;
-  content: '';
-  height: 0.4rem;
-  width: 100%;
-}
-
-.nav-toggle .nav-toggle-bar { margin-top: 0; }
-
-.nav-toggle .nav-toggle-bar::after { margin-top: 0.8rem; }
-
-.nav-toggle .nav-toggle-bar::before { margin-top: -0.8rem; }
-
-.nav-toggle.expanded .nav-toggle-bar { background: transparent; }
-
-.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
-  background: white;
-  margin-top: 0;
-}
-
-.nav-toggle.expanded .nav-toggle-bar::after {
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.nav-toggle.expanded .nav-toggle-bar::before {
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
 
 header img {
   width: 240px;
 }
 
-.hero img {
+.topnav {
+  overflow: hidden;
+  background-color: #D1D3D4;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #662D91;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #5997C7;
+  color: #AE87BD;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.container {
   width: 100%;
   height:600px;
+  text-align: center;
   max-width: 1000px;
   margin: 0 auto;
+  position:relative;
 }
+
+.hero img {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 
 .about {
   display: flex;
@@ -293,7 +355,6 @@ form p {
   margin: 0 auto;
   text-align: center;
 }
-
 
 input {
   border: 2px solid;
